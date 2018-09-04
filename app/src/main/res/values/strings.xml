@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AndroidArchitectureComponent_0</string>
+    <string name="subtitle">
+        "Narrated by Jim Hawkins as an old man, this adaptation relays all the horrors of his childhood adventures. Retaining all the qualities of Robert Louis Stevenson's famous tale of pirates, ships and buried treasure, this adaptation vividly brings characters such as Long John Silver, Ben Gunn and Blind Pew to life"
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

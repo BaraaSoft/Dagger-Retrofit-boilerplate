@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgBook"
+            android:layout_width="94dp"
+            android:adjustViewBounds="true"
+            android:layout_height="143dp"
+            android:src="@drawable/book_img"/>
+        <RelativeLayout
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Available"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_below="@id/tvStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="2dp"
+                android:text="Treasure Island"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvTitle"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="4dp">
+
+                <TextView
+                    android:paddingStart="4dp"
+                    android:id="@+id/tvSubtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:lines="4"
+                    android:paddingTop="4dp"
+                    android:text="@string/subtitle"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textSize="11sp"
+                    android:textStyle="italic" />
+
+                <RatingBar
+                    android:layout_gravity="top"
+                    android:id="@+id/ratingBar"
+                    style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:rating="3.5" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnFavorite"
+                android:background="@drawable/add_fav_button"
+                android:text="add to Favorite"
+                android:textColor="@drawable/button_text_color"
+                android:layout_marginTop="14dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="130dp"
+                android:layout_height="28dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
